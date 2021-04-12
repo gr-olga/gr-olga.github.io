@@ -1,0 +1,92 @@
+body{
+    background-color: #eabb42;
+    -webkit-text-size-adjust: none;
+    color:#3e3b3bfc;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: -.025em;
+    line-height: 1.75em;
+}
+body, header {
+    margin: 0;
+    font-weight: normal;
+
+}
+
+.div {
+    text-align: center;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.mine{
+
+    background-color: #eabb42;
+    transform: translate3d(0,0,0);
+    cursor: default;
+    /*opacity: 0;*/
+    top: -1em;
+    width: 90%;
+    display: inline-block;
+    position: absolute;
+    top:30%;
+    left:5%;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.header {
+    display: inline-block;
+    font-size: 4.35em;
+    font-weight: 900;
+    letter-spacing: -.035em;
+    line-height: 1em;
+    padding-top: 40px;
+    vertical-align: middle;
+}
+
+.p {
+    font-size: 1.25em;
+    margin: .75em 0 .25em;
+    opacity: .75;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+a {
+    color: darkblue;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    text-align: center;
+}
+
+
+.button {
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 12px;
+    width: 45px;
+    border-radius: 100%;
+    transition: all 0.35s ease;
+}
+
+.button:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.button:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
