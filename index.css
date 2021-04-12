@@ -71,6 +71,7 @@ a {
 
 .button {
     border: none;
+    color:#3e3b3bfc;
     outline: none;
     display: inline-block;
     text-align: center;
