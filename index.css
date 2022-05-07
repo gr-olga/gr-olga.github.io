@@ -38,6 +38,9 @@ body, header {
     vertical-align: middle;
     text-align: center;
 }
+.base{
+    z-index: 1;
+}
 
 .header {
     display: inline-block;
@@ -92,39 +95,3 @@ a {
     text-shadow: 0 1px rgba(0, 0, 0, 0.4);
 }
 
-.square-pic {
-    /*position: absolute;*/
-    z-index: 10;
-    /*background-color: #2f80ed;*/
-    opacity: 60%;
-    border: 1px solid #2f80ed;
-    height: 568px;
-    width: 568px;
-    top: 64px;
-    right: 0;
-}
-
-.triangle {
-    background-image: url("./kaufman-triangle.svg");
-    opacity: 50%;
-    position: absolute;
-    right: -210px;
-    height: 877px;
-    width: 877px;
-    top: 0;
-    z-index: 1;
-    background-size: cover;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.rotation {
-    animation: rotation 20s linear infinite;
-}
