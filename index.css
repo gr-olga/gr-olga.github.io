@@ -1,13 +1,14 @@
-body{
+body {
     background-color: #eabb42;
     -webkit-text-size-adjust: none;
-    color:#3e3b3bfc;
-    font-family: 'Source Sans Pro',sans-serif;
+    color: #3e3b3bfc;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: -.025em;
     line-height: 1.75em;
 }
+
 body, header {
     margin: 0;
     font-weight: normal;
@@ -22,21 +23,20 @@ body, header {
     top: 0;
     width: 100%;
 }
-.mine{
 
+.mine {
     background-color: #eabb42;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     cursor: default;
     /*opacity: 0;*/
     top: -1em;
     width: 90%;
     display: inline-block;
     position: absolute;
-    top:30%;
-    left:5%;
+    top: 30%;
+    left: 5%;
     vertical-align: middle;
     text-align: center;
-
 }
 
 .header {
@@ -71,7 +71,7 @@ a {
 
 .button {
     border: none;
-    color:#3e3b3bfc;
+    color: #3e3b3bfc;
     outline: none;
     display: inline-block;
     text-align: center;
@@ -90,4 +90,41 @@ a {
 .button:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
     text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.square-pic {
+    /*position: absolute;*/
+    z-index: 10;
+    /*background-color: #2f80ed;*/
+    opacity: 60%;
+    border: 1px solid #2f80ed;
+    height: 568px;
+    width: 568px;
+    top: 64px;
+    right: 0;
+}
+
+.triangle {
+    background-image: url("./kaufman-triangle.svg");
+    opacity: 50%;
+    position: absolute;
+    right: -210px;
+    height: 877px;
+    width: 877px;
+    top: 0;
+    z-index: 1;
+    background-size: cover;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotation {
+    animation: rotation 20s linear infinite;
 }
